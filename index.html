@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>礼簿 - 记录每一份心意</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon">📖</span>
+          <span class="logo-text">礼簿</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#features">功能</a></li>
+          <li><a href="#pdf-showcase">PDF展示</a></li>
+          <li><a href="#types">类型</a></li>
+          <li><a href="#ai">AI识别</a></li>
+        </ul>
+        <a href="#download" class="nav-btn">立即体验</a>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-line title-line-1">礼簿</span>
+          <span class="title-line title-line-2">记录每一份心意</span>
+        </h1>
+        <p class="hero-subtitle">
+          智能礼簿管理工具，让传统礼尚往来更加便捷高效
+        </p>
+        <div class="hero-cta">
+          <a href="#download" class="btn btn-primary">
+            <span>开始使用</span>
+            <svg
+              class="btn-arrow"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M7 4L13 10L7 16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-container">
+          <div class="phone-glow"></div>
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <img src="./images/home.png" alt="礼簿首页" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>向下滚动</span>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-label">功能特色</span>
+          <h2 class="section-title">强大功能<br />简单易用</h2>
+          <p class="section-desc">
+            每一个功能都经过精心设计，只为给你最好的使用体验
+          </p>
+        </div>
+        <div class="features-showcase">
+          <div class="feature-row">
+            <div class="feature-content">
+              <div class="feature-number">01</div>
+              <h3 class="feature-title">AI智能识别</h3>
+              <p class="feature-desc">
+                拍照即可自动识别姓名和金额，告别手工录入，准确率高达99%。先进的OCR技术让记录变得前所未有的简单。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/ai-scan.png" alt="AI拍照识别" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row reverse">
+            <div class="feature-content">
+              <div class="feature-number">02</div>
+              <h3 class="feature-title">导出Excel</h3>
+              <p class="feature-desc">
+                支持导出Excel表格，方便备份和打印。一键分享给家人，数据永不丢失。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/excel-export.png" alt="导出Excel" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-content">
+              <div class="feature-number">03</div>
+              <h3 class="feature-title">家庭共享</h3>
+              <p class="feature-desc">
+                支持多用户共享礼簿，家庭成员可以共同管理和查看礼簿数据，方便协作。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/family-share.png" alt="家庭共享" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row reverse">
+            <div class="feature-content">
+              <div class="feature-number">04</div>
+              <h3 class="feature-title">打印礼簿</h3>
+              <p class="feature-desc">
+                支持将礼簿导出为PDF格式，方便打印成实体礼簿，保留传统记录方式。
+              </p>
+              <div class="pdf-links" style="margin-top: 20px;">
+                <a href="./assets/张三婚礼礼簿.pdf" target="_blank" style="display: inline-block; margin-right: 16px; padding: 8px 16px; background: var(--accent-blue); color: white; border-radius: 8px; text-decoration: none; font-size: 14px;">查看婚礼礼簿PDF</a>
+                <a href="./assets/李四葬礼礼簿.pdf" target="_blank" style="display: inline-block; padding: 8px 16px; background: var(--accent-blue); color: white; border-radius: 8px; text-decoration: none; font-size: 14px;">查看葬礼礼簿PDF</a>
+              </div>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/print-git-book.png" alt="打印礼簿" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-content">
+              <div class="feature-number">05</div>
+              <h3 class="feature-title">保存相册</h3>
+              <p class="feature-desc">
+                支持将礼簿页面保存为图片到相册，方便分享和备份。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/save-photo.png" alt="保存相册" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row reverse">
+            <div class="feature-content">
+              <div class="feature-number">06</div>
+              <h3 class="feature-title">Excel导入</h3>
+              <p class="feature-desc">
+                支持从Excel文件导入礼簿数据，快速迁移历史记录，节省时间和精力。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/excel-import.png" alt="Excel导入" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-content">
+              <div class="feature-number">07</div>
+              <h3 class="feature-title">礼簿详情</h3>
+              <p class="feature-desc">
+                详细查看礼簿记录，支持排序、搜索和筛选，方便快速找到需要的信息。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/home-detail.png" alt="礼簿详情" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row reverse">
+            <div class="feature-content">
+              <div class="feature-number">08</div>
+              <h3 class="feature-title">个人中心</h3>
+              <p class="feature-desc">
+                管理个人信息和设置，查看使用统计，个性化您的礼簿体验。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/my.png" alt="个人中心" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-content">
+              <div class="feature-number">09</div>
+              <h3 class="feature-title">表格视图</h3>
+              <p class="feature-desc">
+                以表格形式查看礼簿记录，方便快速浏览和管理所有礼金数据。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/git-book-view-table.png" alt="表格视图" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+          <div class="feature-row reverse">
+            <div class="feature-content">
+              <div class="feature-number">10</div>
+              <h3 class="feature-title">导出结果</h3>
+              <p class="feature-desc">
+                导出Excel文件后可以查看详细的礼金记录，方便进行数据分析和管理。
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="feature-image">
+                <img src="./images/excel-export-reault.png" alt="导出结果" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pdf-showcase" class="pdf-showcase">
+      <div class="container">
+        <div class="section-intro center">
+          <span class="section-label">PDF礼簿展示</span>
+          <h2 class="section-title">专业礼簿打印</h2>
+          <p class="section-desc">支持导出精美PDF礼簿，保留传统记录方式</p>
+        </div>
+        <div class="pdf-grid">
+          <div class="pdf-card">
+            <div class="pdf-preview">
+              <div class="pdf-icon">📄</div>
+              <div class="pdf-overlay">
+                <a href="./assets/张三婚礼礼簿.pdf" target="_blank" class="pdf-btn">查看PDF</a>
+              </div>
+            </div>
+            <div class="pdf-info">
+              <h3 class="pdf-title">张三婚礼礼簿</h3>
+              <p class="pdf-desc">婚礼礼簿示例，记录宾客礼金信息</p>
+              <div class="pdf-meta">
+                <span class="pdf-tag">婚礼</span>
+                <span class="pdf-tag">PDF格式</span>
+              </div>
+            </div>
+          </div>
+          <div class="pdf-card">
+            <div class="pdf-preview">
+              <div class="pdf-icon">📄</div>
+              <div class="pdf-overlay">
+                <a href="./assets/李四葬礼礼簿.pdf" target="_blank" class="pdf-btn">查看PDF</a>
+              </div>
+            </div>
+            <div class="pdf-info">
+              <h3 class="pdf-title">李四葬礼礼簿</h3>
+              <p class="pdf-desc">葬礼礼簿示例，庄重记录礼金信息</p>
+              <div class="pdf-meta">
+                <span class="pdf-tag">白事</span>
+                <span class="pdf-tag">PDF格式</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pdf-features">
+          <div class="pdf-feature-item">
+            <div class="pdf-feature-icon">🎨</div>
+            <div class="pdf-feature-content">
+              <h4>精美排版</h4>
+              <p>专业设计的礼簿模板</p>
+            </div>
+          </div>
+          <div class="pdf-feature-item">
+            <div class="pdf-feature-icon">🖨️</div>
+            <div class="pdf-feature-content">
+              <h4>直接打印</h4>
+              <p>支持打印成实体礼簿</p>
+            </div>
+          </div>
+          <div class="pdf-feature-item">
+            <div class="pdf-feature-icon">📱</div>
+            <div class="pdf-feature-content">
+              <h4>多端查看</h4>
+              <p>手机电脑均可查看</p>
+            </div>
+          </div>
+          <div class="pdf-feature-item">
+            <div class="pdf-feature-icon">💾</div>
+            <div class="pdf-feature-content">
+              <h4>永久保存</h4>
+              <p>PDF格式方便存档</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="types" class="types">
+      <div class="container">
+        <div class="section-intro center">
+          <span class="section-label">礼簿类型</span>
+          <h2 class="section-title">覆盖各类场合</h2>
+          <p class="section-desc">无论是婚礼、寿宴还是满月酒，都能完美记录</p>
+        </div>
+        <div class="types-grid">
+          <div class="type-card" data-type="wedding">
+            <div class="type-bg"></div>
+            <div class="type-content">
+              <div class="type-icon">💒</div>
+              <h3 class="type-title">婚礼</h3>
+              <p class="type-desc">记录婚礼宾客礼金<br />见证幸福时刻</p>
+            </div>
+          </div>
+          <div class="type-card" data-type="birthday">
+            <div class="type-bg"></div>
+            <div class="type-content">
+              <div class="type-icon">🎂</div>
+              <h3 class="type-title">生日</h3>
+              <p class="type-desc">寿宴、生日聚会<br />礼金记录</p>
+            </div>
+          </div>
+          <div class="type-card" data-type="baby">
+            <div class="type-bg"></div>
+            <div class="type-content">
+              <div class="type-icon">👶</div>
+              <h3 class="type-title">满月</h3>
+              <p class="type-desc">满月酒、百日宴<br />礼金管理</p>
+            </div>
+          </div>
+          <div class="type-card" data-type="funeral">
+            <div class="type-bg"></div>
+            <div class="type-content">
+              <div class="type-icon">🕯️</div>
+              <h3 class="type-title">白事</h3>
+              <p class="type-desc">庄重记录<br />表达哀思与敬意</p>
+            </div>
+          </div>
+          <div class="type-card" data-type="other">
+            <div class="type-bg"></div>
+            <div class="type-content">
+              <div class="type-icon">🎉</div>
+              <h3 class="type-title">其他</h3>
+              <p class="type-desc">乔迁、升学等<br />各类场合</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="ai-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-label">AI技术</span>
+          <h2 class="section-title">智能识别<br />精准高效</h2>
+          <p class="section-desc">先进的AI技术，让礼簿记录变得前所未有的简单</p>
+        </div>
+        <div class="ai-showcase">
+          <div class="ai-phone">
+            <div class="ai-phone-frame">
+              <img src="./images/ai-scan-result.png" alt="AI识别结果" style="width: 100%; height: 100%; object-fit: cover; border-radius: 28px;" />
+            </div>
+          </div>
+          <div class="ai-features">
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">⚡</div>
+              <div class="ai-feature-content">
+                <h4>极速识别</h4>
+                <p>0.5秒内完成识别</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">🎯</div>
+              <div class="ai-feature-content">
+                <h4>精准识别</h4>
+                <p>准确率高达99%</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">📱</div>
+              <div class="ai-feature-content">
+                <h4>批量处理</h4>
+                <p>一次识别多条记录</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">🔒</div>
+              <div class="ai-feature-content">
+                <h4>隐私保护</h4>
+                <p>数据本地处理</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">💡</div>
+              <div class="ai-feature-content">
+                <h4>智能校正</h4>
+                <p>自动修正识别误差</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">📊</div>
+              <div class="ai-feature-content">
+                <h4>数据统计</h4>
+                <p>实时分析礼簿数据</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="download">
+      <div class="download-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+      </div>
+      <div class="container">
+        <div class="download-content">
+          <h2 class="download-title">立即开始使用</h2>
+          <p class="download-desc">
+            微信扫码或搜索"礼簿"小程序<br />开启智能礼簿管理之旅
+          </p>
+          <div class="download-features">
+            <div class="download-feature">
+              <span class="check-icon">✓</span>
+              <span>完全免费</span>
+            </div>
+            <div class="download-feature">
+              <span class="check-icon">✓</span>
+              <span>无需下载APP</span>
+            </div>
+            <div class="download-feature">
+              <span class="check-icon">✓</span>
+              <span>数据安全可靠</span>
+            </div>
+            <div class="download-feature">
+              <span class="check-icon">✓</span>
+              <span>AI智能识别</span>
+            </div>
+            <div class="download-feature">
+              <span class="check-icon">✓</span>
+              <span>多平台支持</span>
+            </div>
+          </div>
+          <div class="download-qr">
+            <div class="qr-container">
+              <img src="./images/qrcode.jpg" alt="礼簿小程序二维码" style="width: 200px; height: 200px; border-radius: 16px;" />
+              <p class="qr-text">微信扫一扫</p>
+              <p class="qr-subtext">立即体验智能礼簿</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="footer-logo">📖</span>
+            <span class="footer-name">礼簿</span>
+          </div>
+          <p class="footer-copyright">© 2026 礼簿管理 · 记录每一份心意</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
