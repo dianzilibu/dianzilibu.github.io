@@ -95,6 +95,25 @@ body {
   animation: pulse 2s ease-in-out infinite;
 }
 
+.logo-image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer-logo-image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.hero-qr {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  animation: fadeIn 1s ease 1.2s both;
+}
+
 @keyframes pulse {
   0%,
   100% {
